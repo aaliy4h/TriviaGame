@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.carousel.MaskableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carousel_item_container"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/MediumTextView"
+        android:id="@+id/list_title"
+        android:background="@color/light_primary"
+        android:layout_gravity="start"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/LargeTextView"
+        android:id="@+id/list_information"
+        android:paddingTop="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/dark_text_primary"
+        android:textSize="40sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</com.google.android.material.carousel.MaskableFrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/SmallTextView"
+        android:id="@+id/game_settings"
+        android:background="@color/light_secondary"
+        android:textColor="@color/light_text_secondary"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/SmallTextView"
+        android:textColor="@color/dark_secondary"
+        android:id="@+id/correct_answers" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/SmallTextView"
+        android:textColor="@color/dark_secondary"
+        android:id="@+id/coins_awarded" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

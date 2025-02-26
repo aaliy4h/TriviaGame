@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardView"
+        android:id="@+id/question_card"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/MediumTextView"
+                android:id="@+id/question"
+                android:background="@color/light_primary" />
+
+            <!-- maybe set layout_weight to 0 if looks weird
+                or change gravity to start/left horizontal-->
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SmallTextView"
+                android:textColor="@color/dark_text_primary"
+                android:id="@+id/user_answer" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SmallTextView"
+                android:textColor="@color/dark_text_primary"
+                android:id="@+id/correct_answer" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

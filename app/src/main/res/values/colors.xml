@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colours -->
+    <color name="primary">#9F1447</color>
+    <color name="dark_primary">#750F32</color>
+    <color name="light_primary">#C93E6C</color>
+    <color name="light_text_primary">#FFFFFF</color>
+    <color name="dark_text_primary">#1A0A12</color>
+
+    <!-- Secondary Colours -->
+    <color name="secondary">#14479F</color>
+    <color name="dark_secondary">#0F3275</color>
+    <color name="light_secondary">#3E6CC9</color>
+    <color name="light_text_secondary">#FFFFFF</color>
+    <color name="dark_text_secondary">#0A1226</color>
+
+    <!-- Misc. Colours -->
+    <color name="light_red">#EF5350</color> <!-- normal: C62828 -->
+    <color name="dark_red">#8E0000</color>
+    <color name="light_green">#66BB6A</color> <!-- normal: 2E7D32 -->
+    <color name="dark_green">#1B5E20</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#c6c6c6</color>
+
+    <!-- Darker Primary and Secondary Colors -->
+    <color name="purple_night">#4a3f74</color> <!-- Darker primary color for action bar, buttons, etc. -->
+    <color name="dark_purple_night">#2c283f</color> <!-- Darker variant for top app bar or background -->
+    <color name="purple_text_night">#d1cfe0</color> <!-- Lighter text color for good contrast on dark background -->
+    <color name="pink_night">#af8b90</color> <!-- Darker secondary color for floating action buttons, etc. -->
+    <color name="dark_pink_night">#7e6f6f</color> <!-- Darker secondary background variant -->
+    <color name="pink_text_night">#f5f1f1</color> <!-- Lighter secondary text for icons and text -->
+    <color name="red_night">#ff4c5a</color> <!-- Red for errors or alerts, slightly lighter for visibility -->
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/CustomAppBar"
+        android:id="@+id/app_bar"
+
+        app:titleTextColor="@color/light_text_primary"
+        app:navigationIconTint="@color/light_text_primary"
+        app:title="@string/home_screen_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/LargeTextView"
+        android:id="@+id/notification_text"
+        android:text="@string/notification_text"
+        android:gravity="start"
+        android:background="@color/light_primary"
+
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/SmallTextView"
+        android:id="@+id/description_text"
+        android:text="@string/description_text"
+        android:textColor="@color/dark_text_primary"
+        android:gravity="start"
+
+        app:layout_constraintTop_toBottomOf="@id/notification_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+   <com.google.android.material.textfield.MaterialAutoCompleteTextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="none"
+       android:padding="15dp"
+       android:focusable="false"
+       android:hint="@string/time_selection_hint"
+       android:textColorHint="@color/dark_secondary"
+       android:id="@+id/time_text_field"
+       app:layout_constraintTop_toBottomOf="@id/description_text"
+       />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/LargeTextView"
+        android:id="@+id/home_screen_heading"
+        android:text="@string/home_screen_heading"
+        android:textColor="@color/dark_text_primary"
+
+        app:layout_constraintBottom_toTopOf="@+id/statistics_button"
+        app:layout_constraintTop_toBottomOf="@+id/time_text_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/MediumTextView"
+        android:id="@+id/home_screen_subheading"
+        android:text="@string/home_screen_subheading"
+        android:textColor="@color/dark_text_primary"
+
+        app:layout_constraintTop_toBottomOf="@+id/home_screen_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/play_button"
+        android:textSize="30sp"
+        android:text="@string/play_button"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/pet_button"
+        android:text="@string/pet_button"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/play_button"
+        app:layout_constraintStart_toEndOf="@+id/statistics_button"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/statistics_button"
+        android:text="@string/statistics_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/play_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pet_button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

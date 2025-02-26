@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">TriviaGame</string>
+    <string name="play_button">PLAY</string>
+    <string name="pet_button">VISIT PET</string>
+    <string name="daily_question_button">DAILY QUESTION</string>
+    <string name="statistics_button">STATISTICS</string>
+    <string name="account_name">ACCOUNT</string> <!-- maximum length 15 characters to prevent overflow -->
+    <string name="delete_button">DELETE</string>
+    <string name="edit_button">EDIT</string>
+
+    <string name="login_button">LOGIN</string>
+    <string name="register_button">REGISTER</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="welcome_message">Welcome to Trivia Game!</string>
+
+    <string name="classic_game">CLASSIC GAME</string>
+    <string name="timed_game">TIMED GAME</string>
+    <string name="hangman_game">HANGMAN</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="feed_button">FEED (10 Coins)</string>
+    <string name="play_pet_button">PLAY (10 Coins)</string>
+    <string name="hunger_bar">HUNGER:</string>
+    <string name="entertainment_bar">ENTERTAINMENT:</string>
+    <string name="happiness_bar">HAPPINESS:</string>
+
+    <string name="account_screen_title">Accounts</string>
+    <string name="home_screen_title">Trivia Game</string>
+    <string name="selection_screen_title">Game Options</string>
+    <string name="classic_screen_title">Classic Game</string>
+    <string name="timed_screen_title">Timed Game</string>
+    <string name="hangman_screen_title">Hangman</string>
+    <string name="statistics_screen_title">Statistics</string>
+    <string name="pet_screen_title">Your Pet</string>
+
+    <string name="game_statistics">Game Statistics:</string>
+
+    <string name="category">Animals</string>
+    <string name="current_question">11/20</string>
+    <string name="question_type">True or False</string>
+
+    <string name="question">Question placeholder.</string>
+    <string name="multiple_choice">Choice placeholder.</string>
+
+    <string name="category_selection">Select a category</string>
+    <string name="question_num_selection">Select the number of questions</string>
+    <string name="type_selection">Select the answer type</string>
+
+    <string name="game_settings">%1$s | %2$s Questions | %3$s | %4$s</string>
+    <string name="correct_answers">You answered %1$d questions correctly!</string>
+    <string name="coins_awarded">You received %1$d coins.</string>
+
+    <string name="difficulty_menu">Difficulty</string>
+    <string name="easy_button">EASY</string>
+    <string name="medium_button">MEDIUM</string>
+    <string name="hard_button">HARD</string>
+    <string name="difficulty_selection">Select a difficulty: </string>
+
+    <string name="correct_answer">Correct answer: %1$s</string>
+    <string name="user_answer">Your answer: %1$s</string>
+
+    <string name="past_responses">Past Responses:</string>
+    <string name="time_remaining">Time Remaining: %1$d</string>
+
+    <string name="classic_played">Classic Games Played:</string>
+    <string name="timed_high_score">Timed Game High Score:</string>
+    <string name="hangman_won">Hangman Games Won:</string>
+
+    <string name="total_questions">Total Questions Answered:</string>
+    <string name="total_correct">Total Correct Answers:</string>
+
+    <string-array name="num_questions">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>No Limit [Timed]</item>
+    </string-array>
+
+    <string-array name="question_type">
+        <item>True or False</item>
+        <item>Multiple Choice</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>General Knowledge</item>
+        <item>Animals</item>
+        <item>Science</item>
+    </string-array>
+
+    <string name="logout">Logout</string>
+    <string name="coins">Coins: %1$s</string>
+    <string name="pet">Pet</string>
+
+    <string name="logout_snack_bar">You have been logged out.</string>
+
+    <string name="logout_dialog_confirm">Are you sure you want to logout?</string>
+    <string name="logout_dialog_information">You will be taken to the account screen.</string>
+
+    <string name="notification_text">Notifications</string>
+    <string name="description_text">Select when you would like to receive notifications:</string>
+
+    <string name="confirm_button">CONFIRM</string>
+
+    <string name="no_coins">You don\'t have enough coins!</string>
+    <string name="pet_eating">Your pet is now eating!</string>
+    <string name="pet_playing">Your pet is now playing!</string>
+
+    <string name="time_selection_hint">Select a time</string>
+    <string name="current_notification_time">%1$d:%2$02d</string>
+
+    <string name="secondary_title">Register or log in to continue.</string>
+
+    <string name="game_type_classic">classic</string>
+    <string name="game_type_timed">timed</string>
+    <string name="game_type_hangman">hangman</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="home">Go to Home</string>
+    <string name="retry">Retry</string>
+
+    <string name="register">Register</string>
+    <string name="login">Log In</string>
+
+    <string name="time_picker_title">Select Time</string>
+
+    <string name="empty_dropdown">Please fill out all options</string>
+    <string name="invalid_selection">Question number is not valid for this game mode</string>
+    <string name="invalid_selection_timed">Please choose \'No Limit\' for timed games</string>
+    <string name="no_questions">Not enough questions in this category. Please make a different selection.</string>
+
+    <string name="game_end">Game Finished!</string>
+    <string name="timed_game_end">Time is up!</string>
+    <string name="hangman_game_lose">Game Over!</string>
+
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
+    <string name="no_answer">Select an answer before continuing</string>
+
+    <string name="coin_tooltip">Earn coins by doing quizzes!</string>
+
+    <string name="home_screen_heading">Play Games to Earn Coins!</string>
+    <string name="home_screen_subheading">Coins can be spent on your pet!</string>
+
+    <string name="game_intent_title">Play Game</string>
+    <string name="game_intent_body">It\'s time to play trivia!</string>
+    <string name="pet_intent_title">Pet</string>
+    <string name="pet_intent_body">Your pet needs attention!</string>
+
+    <string name="password_length">Password must be at least 6 characters.</string>
+    <string name="invalid_user">Invalid username or password.</string>
+
+
+</resources>

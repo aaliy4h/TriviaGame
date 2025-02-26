@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/SmallTextView"
+        android:id="@+id/logout_confirmation"
+        android:textColor="@color/dark_secondary"
+        android:text="@string/logout_dialog_confirm" />
+
+    <com.google.android.material.textview.MaterialTextView
+        style="@style/SmallTextView"
+        android:id="@+id/logout_information"
+        android:textColor="@color/dark_secondary"
+        android:text="@string/logout_dialog_information" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

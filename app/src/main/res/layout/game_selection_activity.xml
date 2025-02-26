@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/CustomAppBar"
+        android:id="@+id/app_bar"
+
+        app:titleTextColor="@color/light_text_primary"
+        app:navigationIconTint="@color/light_text_primary"
+        app:title="@string/selection_screen_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/classic_button"
+        android:text="@string/classic_game"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/timed_button"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/timed_button"
+        android:text="@string/timed_game"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/hangman_button"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/hangman_button"
+        android:text="@string/hangman_game"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/DropdownMenu"
+        android:id="@+id/category_menu_layout"
+        android:hint="@string/category_selection"
+
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        app:layout_constraintBottom_toTopOf="@id/question_num_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            style="@style/DropdownMenuText"
+            android:id="@+id/category_menu" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/DropdownMenu"
+        android:id="@+id/question_num_layout"
+        android:hint="@string/question_num_selection"
+
+        app:layout_constraintTop_toBottomOf="@+id/category_menu_layout"
+        app:layout_constraintBottom_toTopOf="@+id/type_menu_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            style="@style/DropdownMenuText"
+            android:id="@+id/question_num_menu" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/DropdownMenu"
+        android:id="@+id/type_menu_layout"
+        android:hint="@string/type_selection"
+
+        app:layout_constraintTop_toBottomOf="@+id/question_num_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            style="@style/DropdownMenuText"
+            android:id="@+id/type_menu" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

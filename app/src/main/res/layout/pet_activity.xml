@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        style="@style/CustomAppBar"
+        android:id="@+id/app_bar"
+
+        app:titleTextColor="@color/light_text_primary"
+        app:navigationIconTint="@color/light_text_primary"
+        app:title="@string/pet_screen_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardView"
+        android:layout_width="0dp"
+        android:id="@+id/hunger_bar_view"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/entertainment_bar_view"
+        app:layout_constraintTop_toBottomOf="@id/app_bar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SmallTextView"
+                android:textColor="@color/dark_text_primary"
+                android:text="@string/hunger_bar"/>
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                style="@style/ProgressBar"
+                android:id="@+id/hunger_bar"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardView"
+        android:layout_width="0dp"
+        android:id="@+id/entertainment_bar_view"
+
+        app:layout_constraintStart_toEndOf="@+id/hunger_bar_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SmallTextView"
+                android:textColor="@color/dark_text_primary"
+                android:text="@string/entertainment_bar"/>
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                style="@style/ProgressBar"
+                android:id="@+id/entertainment_bar"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CustomCardView"
+        android:id="@+id/happiness_bar_view"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hunger_bar_view">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/SmallTextView"
+            android:textColor="@color/dark_text_primary"
+            android:text="@string/happiness_bar"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            style="@style/ProgressBar"
+            android:id="@+id/happiness_bar"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/feed_button"
+        android:text="@string/feed_button"
+
+        app:layout_constraintEnd_toStartOf="@+id/play_pet_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/CustomButton"
+        android:id="@+id/play_pet_button"
+        android:text="@string/play_pet_button"
+
+        app:layout_constraintStart_toEndOf="@+id/feed_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pet_image"
+
+        app:layout_constraintBottom_toTopOf="@id/feed_button"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
